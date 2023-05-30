@@ -10,7 +10,7 @@ import Foundation
 import DeepSoundSDK
 
 extension UserDefaults{
-   //
+   
     func setDeviceId(value: String, ForKey:String){
         set(value, forKey: ForKey)
         synchronize()

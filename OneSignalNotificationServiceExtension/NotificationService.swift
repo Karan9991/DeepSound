@@ -10,7 +10,7 @@ import UserNotifications
 import OneSignal
 
 class NotificationService: UNNotificationServiceExtension {
-    //
+    
     var contentHandler: ((UNNotificationContent) -> Void)?
     var receivedRequest: UNNotificationRequest!
     var bestAttemptContent: UNMutableNotificationContent?

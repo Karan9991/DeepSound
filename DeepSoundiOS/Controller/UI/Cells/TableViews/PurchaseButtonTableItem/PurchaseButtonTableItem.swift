@@ -24,7 +24,7 @@ class PurchaseButtonTableItem: UITableViewCell {
     var albumID:String? = ""
     var price:Double? = 0.0
     var paymentRequest = PKPaymentRequest()
-    
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
         self.buyBtn.setTitle(NSLocalizedString("BUY", comment: "BUY"), for: .normal)
@@ -37,7 +37,7 @@ class PurchaseButtonTableItem: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
+    //
     @IBAction func buyBtn(_ sender: Any) {
         if AppInstance.instance.getUserSession(){
              self.showAlert()

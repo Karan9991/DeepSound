@@ -21,7 +21,7 @@ class ApplePayViewController:UIViewController, PKPaymentAuthorizationViewControl
         self.headerView.backgroundColor = UIColor.init(red: 48.0/255.0, green: 85.0/255.0, blue: 112.0/255.0, alpha: 1.0)
 //        self.applePayButton.hidden = !PKPaymentAuthorizationViewController.canMakePaymentsUsingNetworks(SupportedPaymentNetworks)
     }
-    
+    //
     @IBAction func payWithApplePay(_ sender: AnyObject) {
         
         let supportedNetworks = [ PKPaymentNetwork.amex, PKPaymentNetwork.masterCard, PKPaymentNetwork.visa ]
